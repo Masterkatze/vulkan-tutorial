@@ -14,7 +14,7 @@ add_executable(vulkan-tutorial main.cpp ${GLSL_SOURCE_FILES})
 
 target_include_directories(vulkan-tutorial PRIVATE ${Vulkan_INCLUDE_DIRS})
 target_link_libraries(vulkan-tutorial ${Vulkan_LIBRARIES} glfw)
-target_compile_definitions(vulkan-tutorial PRIVATE GLFW_INCLUDE_VULKAN)
+target_compile_definitions(vulkan-tutorial PRIVATE GLFW_INCLUDE_VULKAN GLM_FORCE_RADIANS)
 
 set(GLSL_VALIDATOR "glslangValidator")
 
