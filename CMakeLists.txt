@@ -20,7 +20,8 @@ target_link_libraries(vulkan-tutorial ${Vulkan_LIBRARIES} glfw)
 target_compile_definitions(vulkan-tutorial PRIVATE
   GLFW_INCLUDE_VULKAN
   GLM_FORCE_RADIANS
-  STB_IMAGE_IMPLEMENTATION)
+  STB_IMAGE_IMPLEMENTATION
+  GLM_FORCE_DEPTH_ZERO_TO_ONE)
 
 set(GLSL_VALIDATOR "glslangValidator")
 
